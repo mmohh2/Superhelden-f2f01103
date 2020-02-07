@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jarvis opdracht Superhelden</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<table>
+    <caption>Jarvis opdracht: Superhelden</caption>
+    <tr>
+        <th scope="col">Squad Name</th>
+        <th scope="col">HomeTown</th>
+        <th scope="col">formed</th>
+        <th scope="col">secretBase</th>
+        <th scope="col">active</th>
+    </tr>
+    <tr>
+        <th scope="row"><p id="ID1"></th>
+        <td><p id="ID2"></td>
+        <td><p id="ID3"></td>
+        <td><p id="ID4"></td>
+        <td><p id="ID5"></td>
+    </tr>
+
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">secretIdentity</th>
+        <th scope="col">powers</th>
+        <th scope="col"></th>
+    </tr>
+
+    <tr>
+        <th scope="row"><p id="ID6"></th>
+        <td><p id="ID7"></td>
+        <td><p id="ID8"></td>
+        <td><p id="ID9"></td>
+        <td><p id="ID10"></td>
+    </tr>
+    <tr>
+        <th scope="row"><p id="ID11"></th>
+        <td><p id="ID12"></td>
+        <td><p id="ID13"></td>
+        <td><p id="ID14"></td>
+        <td><p id="ID15"></td>
+    </tr>
+
+    <tr>
+        <th scope="row"><p id="ID16"></th>
+        <td><p id="ID17"></td>
+        <td><p id="ID18"></td>
+        <td><p id="ID19"></td>
+        <td><p id="ID20"></td>
+    </tr>
+
+</table>
+
+<script>
+
+    var text = '{"gegevens":[' +
+        '{"naam":"2016","extra":"" },' +
+        '{"naam":"Metro","extra":"City" },' +
+        '{"naam":"Super hero","extra":"squad" }, ' +
+        '{"naam":"Super","extra":"Tower" }, ' +
+        '{"naam":"True","extra":"" }, ' +
+        '{"naam":"Molecule","extra":"Man" }, ' +
+        '{"naam":"29","extra":"" }, ' +
+        '{"naam":"Dan","extra":"Jukes" }, ' +
+        '{"naam":"Radiation","extra":"restiance" }, ' +
+        '{"naam":"Turning","extra":"tiny" }, ' +
+        '{"naam":"Madame","extra":"Uppercut" }, ' +
+        '{"naam":"39","extra":"" }, ' +
+        '{"naam":"Jane","extra":"Wilson" }, ' +
+        '{"naam":"Million","extra":"tonne punch" }, ' +
+        '{"naam":"Damage","extra":"resistance" }, ' +
+        '{"naam":"Eternal","extra":"Flame" }, ' +
+        '{"naam":"1000000","extra":"" }, ' +
+        '{"naam":"Unknown","extra":"" }, ' +
+        '{"naam":"Immortality","extra":"" }, ' +
+        '{"naam":"Heat","extra":"Immunity" }]}';
+
+    obj = JSON.parse(text);
+    document.getElementById("ID1").innerHTML =
+        obj.gegevens[2].naam + " " + obj.gegevens[2].extra;
+    document.getElementById("ID2").innerHTML =
+        obj.gegevens[1].naam + " " + obj.gegevens[1].extra;
+    document.getElementById("ID3").innerHTML =
+        obj.gegevens[0].naam + " " + obj.gegevens[0].extra;
+    document.getElementById("ID4").innerHTML =
+        obj.gegevens[3].naam + " " + obj.gegevens[3].extra;
+    document.getElementById("ID5").innerHTML =
+        obj.gegevens[4].naam + " " + obj.gegevens[4].extra;
+    document.getElementById("ID6").innerHTML =
+        obj.gegevens[5].naam + " " + obj.gegevens[5].extra;
+    document.getElementById("ID7").innerHTML =
+        obj.gegevens[6].naam + " " + obj.gegevens[6].extra;
+    document.getElementById("ID8").innerHTML =
+        obj.gegevens[7].naam + " " + obj.gegevens[7].extra;
+    document.getElementById("ID9").innerHTML =
+        obj.gegevens[8].naam + " " + obj.gegevens[8].extra;
+    document.getElementById("ID10").innerHTML =
+        obj.gegevens[9].naam + " " + obj.gegevens[9].extra;
+    document.getElementById("ID11").innerHTML =
+        obj.gegevens[10].naam + " " + obj.gegevens[10].extra;
+    document.getElementById("ID12").innerHTML =
+        obj.gegevens[11].naam + " " + obj.gegevens[11].extra;
+    document.getElementById("ID13").innerHTML =
+        obj.gegevens[12].naam + " " + obj.gegevens[12].extra;
+    document.getElementById("ID14").innerHTML =
+        obj.gegevens[13].naam + " " + obj.gegevens[13].extra;
+    document.getElementById("ID15").innerHTML =
+        obj.gegevens[14].naam + " " + obj.gegevens[14].extra;
+    document.getElementById("ID16").innerHTML =
+        obj.gegevens[15].naam + " " + obj.gegevens[15].extra;
+    document.getElementById("ID17").innerHTML =
+        obj.gegevens[16].naam + " " + obj.gegevens[16].extra;
+    document.getElementById("ID18").innerHTML =
+        obj.gegevens[17].naam + " " + obj.gegevens[17].extra;
+    document.getElementById("ID19").innerHTML =
+        obj.gegevens[18].naam + " " + obj.gegevens[18].extra;
+    document.getElementById("ID20").innerHTML =
+        obj.gegevens[19].naam + " " + obj.gegevens[19].extra;
+
+
+</script>
+</body>
+</html>
